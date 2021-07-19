@@ -1,0 +1,43 @@
+body {
+    color: rgb(57, 57, 194);
+}
+
+.main {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.main h1 {
+    text-align: center;
+}
+
+.dbsection {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+}
+
+.dbsection .url {
+    margin: 20px;
+    height: 25px;
+    width: 400px;
+}
+
+.dbsection label {
+    margin: 20px;
+}
+
+.dbsection button {
+    width: 75px;
+    height: 25px;
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.dbList{
+    margin: 20px;
+    height: 300px;
+}
