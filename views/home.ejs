@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 
 <head>
     <meta charset="UTF-8">
@@ -14,19 +14,26 @@
     <div class="main">
         <h1>MongoDB cluster migrate</h1>
         <div class="dbsection">
-            <form action="/dbRead" method="post">
-                    <input type="text" name="input_url" class="url">
+            <form action="/dbTransfer" method="post" id="form_db">
+                <div class="data">
                     <label for="input_url">Input Connection String</label>
-                <button type="submit">Read DB</button>
-            </form>
-            <div class="dbList">
-            </div>
-            <form action="/dbTransfer" method="post">
-                    <input type="text" name="output_url" class="url">
+                    <input type="text" name="input_url" class="url">
+                    <label for="input_db">Input Database name</label>
+                    <input type="text" name="input_db" class="url">
+                    <label for="input_col">Input Collection name</label>
+                    <input type="text" name="input_col" class="url">
+                </div>
+                <div class="data">
                     <label for="output_url">Output Connection String</label>
-                <button type="submit">Trasfer</button>
-            </form>
+                    <input type="text" name="output_url" class="url">
+                    <label for="output_db">Output Database name</label>
+                    <input type="text" name="output_db" class="url">
+                    <label for="output_col">Output Collection name</label>
+                    <input type="text" name="output_col" class="url">
+                </div>
+            </form>            
         </div>
+        <button type="submit" form="form_db" value="Submit">Transfer</button>
     </div>
 </body>
 

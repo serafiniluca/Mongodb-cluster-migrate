@@ -14,30 +14,39 @@ body {
 
 .dbsection {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     justify-content: space-evenly;
 }
 
-.dbsection .url {
+form {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.data {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
     margin: 20px;
+}
+
+.dbsection .url {
+    margin: 0px;
     height: 25px;
     width: 400px;
 }
 
 .dbsection label {
-    margin: 20px;
+    margin: 5px;
 }
 
-.dbsection button {
+.main button {
     width: 75px;
     height: 25px;
     background-color: cornflowerblue;
     color: white;
     border-radius: 5px;
     margin: 20px;
-}
-
-.dbList{
-    margin: 20px;
-    height: 300px;
+    align-self:center;
 }

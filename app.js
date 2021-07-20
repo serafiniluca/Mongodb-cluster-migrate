@@ -2,16 +2,9 @@
     LOAD THE DEPENDENCIES
 ==========================*/
 const express = require('express');
-require("dotenv").config();
 const fs = require('fs');
 const path = require('path')
 var bodyParser = require('body-parser')
-
-/* =======================
-    LOAD THE CONFIG
-==========================*/
-const { PORT } = require('./config/config');
-
 
 
 /* =======================
@@ -36,16 +29,13 @@ app.use(function (req, res, next) {
 ==========================*/
 const home = require('./routes/home');
 
-
 /* =======================
         MOUNT
 ==========================*/
 app.use(home);
 
 
-
-
 /* =======================
     CONNECT TO MONGODB SERVER
 ==========================*/
-app.listen(PORT, console.log("Application available at http://localhost:" + PORT));
+app.listen(3000, console.log("Application available at http://localhost:" + 3000));
