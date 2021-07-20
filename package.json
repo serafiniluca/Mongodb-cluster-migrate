@@ -3,16 +3,25 @@
   "version": "1.0.0",
   "description": "simple tool to automatically migrate databases from one cluster to another",
   "main": "app.js",
+  "dependencies": {
+      "body-parser": "^1.19.0",
+      "ejs": "^3.1.6",
+      "express": "^4.17.1",
+      "mongodb": "^4.0.0",
+      "nodemon": "^2.0.12"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "nodemon app.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rosik93/Mongodb-cluster-migrate.git"
+  },
   "author": "Luca Serafini",
   "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.19.0",
-    "ejs": "^3.1.6",
-    "express": "^4.17.1",
-    "mongodb": "^4.0.0",
-    "nodemon": "^2.0.12"
-  }
+  "bugs": {
+    "url": "https://github.com/Rosik93/Mongodb-cluster-migrate/issues"
+  },
+  "homepage": "https://github.com/Rosik93/Mongodb-cluster-migrate#readme"
 }
