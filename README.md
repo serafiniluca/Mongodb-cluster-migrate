@@ -8,6 +8,5 @@ Web app for transferring data from one collection to another on a Mongodb databa
 3. Run the command 
 ```
 npm install 
-npn start
 node app.js
 ```
